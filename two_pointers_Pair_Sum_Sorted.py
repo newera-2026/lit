@@ -18,7 +18,6 @@ def pair_sum_sorted(nums : list[int], target : int) -> list[int] :
     
     while last > first:
         sum = nums[first] + nums[last]
-        print("here", first)
         if sum > target :
             last -=1
         elif sum < target:
